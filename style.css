@@ -1,105 +1,35 @@
 html {
-    font-size: calc(0.5em + 0.75vw)
+    font-size: calc(1em + 1vw)
 }
 
-body{
+body {
+    font-size: 18px;
     background-color:rgb(203, 240, 255);
-   }
+    font-family: 'Jost', sans-serif;
+}
 
-   .container {
+header, footer {
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 1.45;
+   }
+   h1 { font-size: 4em; }
+   h2 { font-size: 3em; }
+   h3 { font-size: 3em; }
+   h4 { font-size: 2em; }
+   h5 { font-size: 1em; }
+   h6 { font-size: 0.5em; }
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
     align-content: center;
     padding-bottom: 4rem;
 }
 
-h1 {
-    font-family:cursive;
-    font-weight: 900px;
-    font-style: italic;
-    text-transform: uppercase;
-    letter-spacing:0.2em;
-    word-spacing:0.5em;
-    color:rgb(14, 14, 129) ;
+footer {
+    bottom: 0;
 }
-
-
-
-.card{
-    box-shadow: 16px 20px 24px royalblue;
-    border: 10px dotted red;
-    padding: 20px;
-    margin: 50px;
-    background-color: khaki;
-    
-
-  }
-
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 red;
-}
-
-.card-2{
-    box-shadow: 16px 20px 24px 0 royalblue;
-    border: 10px dotted red;
-    padding: 20px;
-    margin: 50px;
-    background-color: khaki;
-    text-align: center;
-    
-}
-
-.card-2:hover{
-    box-shadow: 0 8px 16px 0 red;
-
-}
-
-
-#flight-search {
-    margin-top: 10%;
-}
-
-
-#cheap-flights{
-    margin-top: 10%;
-
-}
-
-#flights-at-fifferent-currency-exchange{
-    margin-top: 20%;
-
-}
-
-
-#currency-exchange {
-    margin-top: 10%;
-}
-
-
-
-#support{
-    margin-top: 5%;
-
-}
-
-footer{
-    text-align: center;
-    margin-top: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
