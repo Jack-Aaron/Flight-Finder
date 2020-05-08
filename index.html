@@ -10,7 +10,6 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
@@ -22,31 +21,30 @@
     <h1>International Flight Prices</h1>
   </header>
   <main class="container">
-    <section id="cheap-flights">
-      <form class="form" id="flightform">
-        <div class="col-5">
+    <section id="cheap-flights" class="row justify-content-center">
+      <form class="form form-inline" id="flightform">
+        <div class="col-5 ">
           <label for="departure">Departure City</label>
           <input id="departure" type="text">
         </div>
         <div class="col-5">
           <label for="destination">Destination City</label>
-          <input id="destination" type="text"> </div>
+          <input id="destination" type="text">
+        </div>
+        <br>
         <div class="col-2">
-          <input id="search" type="submit" value="Search">
+          
         </div>
       </form>
     </section>
-
-    <div id="airport-codes">
-      ​
-    </div>
-
+    <button id="search">Search</button>
+    <section id="airport-codes">
+    </section>
     </div>
     <div id="displayUSDPrice" style="text-align: center;"></div>
     </section>
-    ​
     <section class="container">
-      <figure id="currency-exchange" class="container">
+      <figure id="currency-exchange">
         <label for="currency-picker">Choose A Currency:</label>
         <select id="currency-picker">
           <option value="none">Select A Currency</option>
@@ -57,16 +55,12 @@
         <div id="displayConversion"></div>
       </figure>
     </section>
-
-
-    ​
-
-    ​
   </main>
-
-  ​
-  ​
-  ​
+  <footer>
+    <p>
+      Jonathan Alpart 2020
+    </p>
+  </footer>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -79,13 +73,6 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  ​
-  ​
-  <footer>
-    <p>
-      Jonathan Alpart 2020
-    </p>
-  </footer>
 </body>
 
 </html>

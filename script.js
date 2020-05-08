@@ -65,7 +65,7 @@ $(document).ready(function () {
 
 
 	// submit button is attached the div with ID: flightform
-	$("#flightform").on('submit', function (event) {
+	$("#search").on('click', function (event) {
 		event.preventDefault();
 		// empty out the section for the new incoming stuff
 		airports.empty();
@@ -100,7 +100,7 @@ $(document).ready(function () {
 
 				// we will be making a dropdown menu for user to select the airport of the city
 				selectAirports.attr("id", "SelectAirports");
-				selectAirports.attr("class", "form");
+				selectAirports.attr("class", "form inline");
 				airportsContainer.append(selectAirports);
 
 
@@ -117,7 +117,7 @@ $(document).ready(function () {
 					chooseAirport.append(`<option value="${place.PlaceId}">${place.PlaceName}</option>`);
 				});
 				//this heading is for user to know what they are selecting
-				var selectAirport = $("<h4>");
+				var selectAirport = $("<label>");
 				selectAirport.text(`Select ${type} City's Airport`);
 				selectAirports.prepend(selectAirport);
 			})

@@ -22,12 +22,50 @@ h1,h2,h3,h4,h5,h6,p {
    h5 { font-size: 1em; }
    h6 { font-size: 0.5em; }
 
-
 .container {
     display: grid;
     grid-template-columns: auto;
     align-content: center;
     padding-bottom: 4rem;
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+/* Style the input fields */
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+button#search {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: black;
+}
+
+button#search:hover {
+    background-color: royalblue;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+    .form-inline input {
+        margin: 10px 0;
+    }
+  .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
 }
 
 footer {
