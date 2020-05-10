@@ -81,6 +81,7 @@ $(document).ready(function () {
 	})
 
 	async function citySearch(city, type) {
+		city.toUpperCase;
 		airportsContainer.attr("id", "AirportsContainer");
 		airportsContainer.attr("class", "container");
 		cheapFlights.append(airportsContainer);
@@ -100,7 +101,7 @@ $(document).ready(function () {
 
 				// we will be making a dropdown menu for user to select the airport of the city
 				selectAirports.attr("id", "SelectAirports");
-				selectAirports.attr("class", "form inline");
+				selectAirports.attr("class", "form");
 				airportsContainer.append(selectAirports);
 
 
@@ -110,16 +111,14 @@ $(document).ready(function () {
 				chooseAirport.attr("id", `${type}Airports`)
 				// appending it to the "airports" area of page
 				selectAirports.prepend(chooseAirport);
+				//this selection is for user to know what they are selecting
+				chooseAirport.append(`<option value="none">Select ${type} City's Airport</option>`)
 				// for each place (airport)
 				response.Places.forEach(place => {
-
+					
 					// value for each selection is the Place ID, name shown is PlaceName
-					chooseAirport.append(`<option value="${place.PlaceId}">${place.PlaceName}</option>`);
+					chooseAirport.append(`<option value="${place.PlaceId}">${place.PlaceName}</option>`)
 				});
-				//this heading is for user to know what they are selecting
-				var selectAirport = $("<label>");
-				selectAirport.text(`Select ${type} City's Airport`);
-				selectAirports.prepend(selectAirport);
 			})
 			.catch(err => {
 				console.log(err);
