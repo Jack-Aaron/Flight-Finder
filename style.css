@@ -32,7 +32,6 @@ h1,h2,h3,h4,h5,h6,p {
 .form-inline {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
   }
   
 /* Style the input fields */
@@ -44,11 +43,12 @@ h1,h2,h3,h4,h5,h6,p {
     border: 1px solid #ddd;
 }
 
-label {
-    align-items: center;
-}
-
 /* Style the submit button */
+
+button {
+    width: 20%;
+    margin: 0 auto;
+}
 button#search {
     margin-top: 30px;
     padding: 10px 20px;
