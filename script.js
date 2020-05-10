@@ -89,6 +89,8 @@ $(document).ready(function () {
 		city.toUpperCase;
 		airportsContainer.attr("id", "AirportsContainer");
 		airportsContainer.attr("class", "container");
+		airportsContainer.attr("style", "text-align:center");
+		
 		cheapFlights.append(airportsContainer);
 		// call API for the ${city} query
 		fetch(`https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/US/USD/en-US/?query=${city}`, {
