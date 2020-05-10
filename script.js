@@ -7,6 +7,7 @@ $(document).ready(function () {
 	var selectAirports = $("<form>");
 	var airports = $("<figure>");
 	var displayAirportsOptions = $("#displayAirportOptions");
+	var currencyPicker = $("#currency-picker");
 
 
 	// submit button is attached the div with ID: currency-picker
@@ -60,6 +61,7 @@ $(document).ready(function () {
 				console.log(price);
 
 				$("#displayUSDPrice").text("$" + price + ".00");
+				currencyPicker.attr("style", "visibility:visible");
 			})
 			.catch(err => {
 				console.log(err);
@@ -73,7 +75,7 @@ $(document).ready(function () {
 	$("#search").on('click', function (event) {
 		event.preventDefault();
 		// empty out the section for the new incoming stuff
-		airports.empty();
+		selectAirports.empty();
 		// get user inputs of cities
 		var departure = $("#departure").val();
 		var destination = $("#destination").val();
@@ -86,7 +88,7 @@ $(document).ready(function () {
 
 	async function citySearch(city, type) {
 		city.toUpperCase;
-		airports.attr("id", "AirportsContainer");
+		airports.attr("id", "airports");
 		airports.attr("class", "container");
 		airports.attr("style", "text-align:center");
 		
@@ -104,6 +106,7 @@ $(document).ready(function () {
 			})
 			.then(response => {
 				console.log(response)
+				
 
 				// we will be making a dropdown menu for user to select the airport of the city
 				selectAirports.attr("id", "SelectAirports");
