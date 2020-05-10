@@ -52,10 +52,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 button#search {
     width: 20%;
-    position: fixed;
-    margin-left: 30%;
-    margin-top: 10%;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: dodgerblue;
     border: 1px solid #ddd;
     border-radius: 20px;

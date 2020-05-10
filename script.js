@@ -62,6 +62,7 @@ $(document).ready(function () {
 
 				$("#displayUSDPrice").text("$" + price + ".00");
 				currencyPicker.attr("style", "visibility:visible");
+				$("#search").attr("style", "visibility:hidden");
 			})
 			.catch(err => {
 				console.log(err);
