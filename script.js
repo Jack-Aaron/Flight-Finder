@@ -4,10 +4,8 @@ $(document).ready(function () {
 	var destination;
 	var price = 0;
 
-	
-	var airports = $("#airport-codes");
 	var selectAirports = $("<form>");
-	var airportsContainer = $("<figure>");
+	var airports = $("<figure>");
 	var displayAirportsOptions = $("#displayAirportOptions");
 
 
@@ -88,11 +86,11 @@ $(document).ready(function () {
 
 	async function citySearch(city, type) {
 		city.toUpperCase;
-		airportsContainer.attr("id", "AirportsContainer");
-		airportsContainer.attr("class", "container");
-		airportsContainer.attr("style", "text-align:center");
+		airports.attr("id", "AirportsContainer");
+		airports.attr("class", "container");
+		airports.attr("style", "text-align:center");
 		
-		displayAirportsOptions.append(airportsContainer);
+		displayAirportsOptions.append(airports);
 		// call API for the ${city} query
 		fetch(`https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/US/USD/en-US/?query=${city}`, {
 			"method": "GET",
@@ -110,7 +108,7 @@ $(document).ready(function () {
 				// we will be making a dropdown menu for user to select the airport of the city
 				selectAirports.attr("id", "SelectAirports");
 				selectAirports.attr("class", "form");
-				airportsContainer.append(selectAirports);
+				airports.append(selectAirports);
 
 
 				// creating a select element
