@@ -38,7 +38,7 @@ $(document).ready(function () {
 
 
 	// submit button is attached the div with ID: AirportSelectionButton
-	$(".container").on('click', "#AirportSelectionButton", function (event) {
+	$(".container").on('change', "#SelectAirports", function (event) {
 		event.preventDefault();
 		var departureAirport = $("#DepartureAirports").val();
 		var destinationAirport = $("#DestinationAirports").val();
