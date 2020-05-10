@@ -9,6 +9,7 @@ body {
 
 header, footer {
     text-align: center;
+    padding-top: 1em;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -25,7 +26,7 @@ h1,h2,h3,h4,h5,h6,p {
     display: grid;
     grid-template-columns: auto;
     align-content: center;
-    padding-bottom: 4em;
+    padding-bottom: 2em;
 }
 
 .form-inline {
@@ -41,6 +42,10 @@ h1,h2,h3,h4,h5,h6,p {
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
+}
+
+label {
+    align-items: center;
 }
 
 /* Style the submit button */
