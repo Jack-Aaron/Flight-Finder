@@ -51,7 +51,8 @@ h1,h2,h3,h4,h5,h6,p {
 /* Style the submit button */
 
 button#search {
-    width: 20%;
+    width: 10em;
+    margin: 0 auto;
     padding: 10px;
     background-color: dodgerblue;
     border: 1px solid #ddd;
@@ -75,7 +76,6 @@ button#search:hover {
 }
 
 footer {
-    position: fixed;
-    margin-left: 45%;
-    bottom: 0;
+ 
+    margin: 0 auto;
 }

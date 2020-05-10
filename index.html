@@ -21,7 +21,7 @@
     <h1>The Lowest Flight Price</h1>
   </header>
   <main class="container">
-    <section class="container">
+    <section class="container justify-content-center">
       <div class="row justify-content-center">
         <form class="form form-inline" id="flightform">
           <div class="col-6">
@@ -32,15 +32,13 @@
           </div>
         </form>
       </div>
-      <figure id="displayAirportOptions"></figure>
-      <div id="displayUSDPrice" style="text-align: center;"></div>
-      <button id="search">Search</button>
+
+        <button id="search">Search</button>
+        <figure id="displayAirportOptions"></figure>
+        <div id="displayUSDPrice" style="text-align: center;"></div>
 
     </section>
-
-
     <figure id="currency-exchange" style="visibility:hidden">
-
       <label for="currency-picker">Choose A Currency:</label>
       <select id="currency-picker">
         <option value="none">Select A Currency</option>
@@ -49,7 +47,6 @@
         <option value="JPY">JPY</option>
       </select>
       <div id="displayConversion"></div>
-
     </figure>
   </main>
   <footer>
