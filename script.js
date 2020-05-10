@@ -4,10 +4,11 @@ $(document).ready(function () {
 	var destination;
 	var price = 0;
 
-	var cheapFlights = $("#cheap-flights");
+	
 	var airports = $("#airport-codes");
 	var selectAirports = $("<form>");
 	var airportsContainer = $("<figure>");
+	var displayAirportsOptions = $("#displayAirportOptions");
 
 
 	// submit button is attached the div with ID: currency-picker
@@ -91,7 +92,7 @@ $(document).ready(function () {
 		airportsContainer.attr("class", "container");
 		airportsContainer.attr("style", "text-align:center");
 		
-		cheapFlights.append(airportsContainer);
+		displayAirportsOptions.append(airportsContainer);
 		// call API for the ${city} query
 		fetch(`https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/autosuggest/v1.0/US/USD/en-US/?query=${city}`, {
 			"method": "GET",
