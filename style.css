@@ -12,6 +12,10 @@ header, footer {
     padding-top: 1em;
 }
 
+main {
+    margin-top: 2em;
+}
+
 h1,h2,h3,h4,h5,h6,p {
     line-height: 1.45;
    }
@@ -41,6 +45,7 @@ h1,h2,h3,h4,h5,h6,p {
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 /* Style the submit button */
@@ -53,6 +58,7 @@ button#search {
     padding: 10px 20px;
     background-color: dodgerblue;
     border: 1px solid #ddd;
+    border-radius: 20px;
     color: black;
 }
 
