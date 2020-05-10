@@ -75,5 +75,7 @@ button#search:hover {
 }
 
 footer {
+    position: fixed;
+    margin-left: 45%;
     bottom: 0;
 }
