@@ -1,9 +1,8 @@
 html {
-    font-size: calc(1em + 1vw)
+    font-size: calc(0.5em + 0.5vw)
 }
 
 body {
-    font-size: 18px;
     background-color:rgb(203, 240, 255);
     font-family: 'Jost', sans-serif;
 }
@@ -26,6 +25,7 @@ h1,h2,h3,h4,h5,h6,p {
     display: grid;
     grid-template-columns: auto;
     align-content: center;
+    padding-bottom: 4em;
 }
 
 .form-inline {
