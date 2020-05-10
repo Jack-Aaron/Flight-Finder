@@ -40,8 +40,7 @@ h1,h2,h3,h4,h5,h6,p {
   
 /* Style the input fields */
 .form-inline input {
-    vertical-align: middle;
-    margin: 5px 10px 5px 0;
+    margin: 5px 10px 5px -10px;
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
