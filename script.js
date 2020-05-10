@@ -82,7 +82,6 @@ $(document).ready(function () {
 		if (departure !== "" && destination !== "") {
 			citySearch(departure, "Departure"); // (2nd parameters are for future ID names)
 			citySearch(destination, "Destination"); // ^^
-			generateFinalButton();
 		}
 	})
 
@@ -130,15 +129,4 @@ $(document).ready(function () {
 				console.log(err);
 			});
 	}
-
-	function generateFinalButton() {
-		var airportSelectionButton = $("<button>"); // creating new input
-		airportSelectionButton.text("Get Price");
-		airportSelectionButton.attr("id", "AirportSelectionButton"); // button ID
-
-		selectAirports.append($("<br>"));
-		selectAirports.append($("<br>"));
-		selectAirports.append(airportSelectionButton); // stick that button on!
-	}
-
 })
