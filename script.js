@@ -22,7 +22,9 @@ $(document).ready(function () {
 			.then(response => response.json())
 			.then(response => {
 				var conversionRate = response;
-				$("#displayConversion").text(conversionRate * price);
+				var convertedPrice = conversionRate * price;
+				var convertedPriceFloat2 = convertedPrice.toFixed(2);
+				$("#displayConversion").text(convertedPriceFloat2 + " " + `${this.value}`);
 
 			})
 			.catch(err => {
