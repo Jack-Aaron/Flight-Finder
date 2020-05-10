@@ -24,7 +24,11 @@ $(document).ready(function () {
 				var conversionRate = response;
 				var convertedPrice = conversionRate * price;
 				var convertedPriceFloat2 = convertedPrice.toFixed(2);
-				$("#displayConversion").text(convertedPriceFloat2 + " " + `${this.value}`);
+				function numberWithCommas(x) {
+					return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+				}
+				var finalPrice = numberWithCommas(convertedPriceFloat2);
+				$("#displayConversion").text(finalPrice + " " + `${this.value}`);
 
 			})
 			.catch(err => {
