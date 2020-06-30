@@ -45,7 +45,7 @@ $(document).ready(function () {
 		console.log(departureAirport);
 		console.log(destinationAirport);
 
-		fetch(`https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/${departureAirport}/${destinationAirport}/2020-05-12?inboundpartialdate=2020-08-01`, {
+		fetch(`https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/${departureAirport}/${destinationAirport}/2020-08-12?inboundpartialdate=2020-09-01`, {
 			"method": "GET",
 			"headers": {
 				"x-rapidapi-host": "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com",
