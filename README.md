@@ -1,4 +1,4 @@
-# Flight-Finder
+# Paper Plane
 
 ### Meet The Team
 * [Jonathan Alpart](https://github.com/Jack-Aaron/) Front-end javascript
